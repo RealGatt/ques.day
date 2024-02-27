@@ -6,15 +6,8 @@ export default async function QuesdayBlock() {
 
 	const now = new Date();
 
-	const allow = false;
-
 	// check if it is a Tuesday, between 6pm and 11pm
-	if (
-		now.getDay() === 2 &&
-		now.getHours() >= 18 &&
-		now.getHours() <= 23 &&
-		allow
-	) {
+	if (now.getDay() === 2 && now.getHours() >= 18 && now.getHours() <= 23) {
 		return (
 			<h1 className="relative z-10 p-4 text-lg md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-yellow-200 to-yellow-600 text-center font-sans font-bold">
 				Yes! <br />
