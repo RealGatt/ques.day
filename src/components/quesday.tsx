@@ -1,6 +1,6 @@
-"use server";
+"use client";
 
-export default async function QuesdayBlock() {
+export default function QuesdayBlock() {
 	// set timezone to Melbourne
 	process.env.TZ = "Australia/Melbourne";
 

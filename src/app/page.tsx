@@ -1,12 +1,10 @@
-"use server";
-
 import QuesdayBlock from "@/components/quesday";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import Image from "next/image";
 
 export const dynamic = "force-dynamic";
 
-export default async function Home() {
+export default function Home() {
 	return (
 		<main className="bg-neutral-800 flex min-h-screen flex-col items-center justify-between p-24">
 			<div className="h-full w-full rounded-mdrelative flex flex-col items-center justify-center antialiased">
