@@ -15,11 +15,10 @@ export default function QuesdayBlock() {
 			</h1>
 		);
 	} else {
-		// Get the timestamp for the nextmost Tuesday at 6pm AEDT
 		const nextTuesday = new Date();
-		nextTuesday.setDate(
-			nextTuesday.getDate() + ((2 - nextTuesday.getDay()) % 7 || 7)
-		);
+		// set Date to next Tuesday. This should always be in the future
+		nextTuesday.setDate(nextTuesday.getDate() + (2 - nextTuesday.getDay()));
+
 		// set the time to 6pm
 		nextTuesday.setHours(18);
 		// zero minutes, seconds
