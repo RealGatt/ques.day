@@ -17,7 +17,10 @@ export default function QuesdayBlock() {
 	} else {
 		const nextTuesday = new Date();
 		// set Date to next Tuesday. This should always be in the future
-		nextTuesday.setDate(nextTuesday.getDate() + (2 - nextTuesday.getDay()));
+		const daysUntilNextTuesday = (2 - nextTuesday.getDay() + 7) % 7;
+
+		// Set the Date to next Tuesday
+		nextTuesday.setDate(nextTuesday.getDate() + daysUntilNextTuesday);
 
 		// set the time to 6pm
 		nextTuesday.setHours(18);
