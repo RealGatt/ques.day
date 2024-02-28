@@ -16,8 +16,8 @@ export default function Home() {
 						<Image
 							src="/favicon.ico"
 							unoptimized
-							width={128}
-							height={128}
+							width={108}
+							height={80}
 							alt="Overwatch Champion Icon"
 						/>
 					</div>
